@@ -9,6 +9,7 @@ function App() {
   const { counter } = useSelector( state => state.counter);
 
   const dispatch = useDispatch();
+  const numberPayload = 4;
 
   return (
     <>
@@ -24,8 +25,8 @@ function App() {
         <button onClick={ () => dispatch( decrement() )}>
           Decrement
         </button>
-        <button onClick={ () => dispatch( incrementBy(2) )}>
-          Increment by {incrementBy(action.payload)}
+        <button onClick={ () => dispatch( incrementBy(numberPayload) )}>
+          Increment by {numberPayload}
         </button>
       </div>
     </>
