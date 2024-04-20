@@ -6,9 +6,8 @@
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+  font-size: 46px;
+  margin-bottom: 0px;
   transition: filter 300ms;
 }
 .logo:hover {
