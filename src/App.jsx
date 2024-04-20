@@ -2,7 +2,7 @@ import reactLogo from './assets/react.svg'
 import { useDispatch, useSelector } from 'react-redux'
 
 import './App.css'
-import { increment, decrement } from './store/slices/counter';
+import { increment, decrement, incrementBy } from './store/slices/counter';
 
 function App() {
 
@@ -19,10 +19,13 @@ function App() {
       <h2>Valor: <code>{ counter }</code></h2>
       <div className="card">
         <button onClick={ () => dispatch( increment() )}>
-          Add +1
+          Increment
         </button>
         <button onClick={ () => dispatch( decrement() )}>
-          Rest -1
+          Decrement
+        </button>
+        <button onClick={ () => dispatch( incrementBy(2) )}>
+          Increment by {incrementBy(action.payload)}
         </button>
       </div>
     </>
