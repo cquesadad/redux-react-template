@@ -9,6 +9,7 @@ function App() {
   const { counter } = useSelector( state => state.counter);
 
   const dispatch = useDispatch();
+  //Add payload number to increment, also to show in button
   const numberPayload = 4;
 
   return (
